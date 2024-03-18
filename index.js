@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
   res.send("Hello World");
 });
 
-app.post("/createFile", async (req, res) => {
+app.post("/createFiles", async (req, res) => {
   const newFile = req.body;
   createFile(newFile);
 
